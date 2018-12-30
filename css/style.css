@@ -197,3 +197,25 @@ body {
 		font-size: .85rem; 
 	}
 }
+
+@media (max-width:790px) {
+	.gallery {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+
+	.pricing__item {
+		margin-left: 6%;
+		width: 47%;
+		height: 7em;
+	}
+
+	.pricing__item:nth-child(3n+1) { 
+		margin-left: 6%;
+	}
+
+	.pricing__item:nth-child(odd) { 
+		margin-left: 0;
+	}
+}
