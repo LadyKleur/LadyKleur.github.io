@@ -7,7 +7,7 @@ $(document).ready(function() {
 	if(change.length) {
 		$(document).scroll(function() { 
 			scroll_start = $(this).scrollTop();
-			if(scroll_start >= offset.top) {
+			if(scroll_start >= offset.top - 100) {
 				$(".nav").addClass("nav--scrolled");
 			} else if (pagePosition < offset.top) {
 				$(".nav").removeClass("nav--scrolled");
@@ -22,9 +22,6 @@ $(document).ready(function() {
 	}
 
 	fullHeight();
-
-	// Fold out nav for mobile
-
 });
 
 // Reload .full div on window resize
