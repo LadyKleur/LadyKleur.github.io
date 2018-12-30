@@ -180,6 +180,14 @@ body {
 	-webkit-transition: color .3s ease-in-out;
 }
 
+.footer {
+	background-color: #029be6;
+	color: #ffffff;
+	font-size: .8em;
+	text-align: center;
+	padding: 1em;
+}
+
 @media (max-width:984px) {
 	.hero__text {
 		font-size: 6em;
@@ -229,7 +237,7 @@ body {
 	body {
 		background-size: 70%;
 	}
-	
+
 	.hero__text {
 		font-size: 5em;
 		border-bottom: .1rem solid #ffffff;
