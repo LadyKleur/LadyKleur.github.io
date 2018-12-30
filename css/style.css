@@ -226,6 +226,10 @@ body {
 }
 
 @media (max-width:550px) {
+	body {
+		background-size: 70%;
+	}
+	
 	.hero__text {
 		font-size: 5em;
 		border-bottom: .1rem solid #ffffff;
