@@ -1,15 +1,19 @@
 $(document).ready(function() {
-	// Nav bar transition						FIX FOR MOBILE
+	//Nav bar transition
 	var pagePosition = 0;
+	var change = $(".section");
+	var offset = change.offset();
 
-	$(window).scroll(function() {
-		pagePosition = $(window).scrollTop();    
-		if (pagePosition >= 530) {
-			$(".nav").addClass("nav--scrolled");
-		} else if (pagePosition < 530) {
-			$(".nav").removeClass("nav--scrolled");
-		}
-	});
+	if(change.length) {
+		$(document).scroll(function() { 
+			scroll_start = $(this).scrollTop();
+			if(scroll_start >= offset.top) {
+				$(".nav").addClass("nav--scrolled");
+			} else if (pagePosition < offset.top) {
+				$(".nav").removeClass("nav--scrolled");
+			}
+		});
+	}
 
 	// Set height of .full
 	var height = $(".section:nth-child(6)").height();
@@ -18,6 +22,9 @@ $(document).ready(function() {
 	}
 
 	fullHeight();
+
+	// Fold out nav for mobile
+
 });
 
 // Reload .full div on window resize
