@@ -235,7 +235,7 @@ body {
 
 @media (max-width:550px) {
 	body {
-		background-size: 70%;
+		background-size: 50%;
 	}
 
 	.hero__text {
@@ -265,4 +265,12 @@ body {
 
 	.contact__link:hover {
 		font-size: 3em;
+	}
+
+	.footer {
+		background-color: #029be6;
+		color: #ffffff;
+		font-size: .8em;
+		text-align: center;
+		padding: 1em;
 	}
