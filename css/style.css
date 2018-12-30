@@ -221,6 +221,10 @@ body {
 }
 
 @media (max-width:550px) {
+	.hero__text {
+		font-size: 5em;
+		border-bottom: .1rem solid #ffffff;
+	}
 	.gallery {
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
