@@ -179,8 +179,21 @@ body {
 	-webkit-transition: color .3s ease-in-out;
 }
 
-@media only screen and (max-device-width : 984px) {				/* change to min-device-width */
+@media (max-width:984px) {
+	.hero__text {
+		font-size: 6em;
+	}
+
+	.nav {
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav__item:last-child {
+		padding-right: 0;
+	}
+
 	.nav__item__link {
-		font-size: .5rem;
+		font-size: .85rem; 
 	}
 }
