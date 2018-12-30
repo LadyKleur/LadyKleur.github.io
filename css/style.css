@@ -219,6 +219,10 @@ body {
 	.pricing__item:nth-child(odd) { 
 		margin-left: 0;
 	}
+
+	.contact__link {
+		font-size: 4em;
+	}
 }
 
 @media (max-width:550px) {
@@ -243,4 +247,10 @@ body {
 		margin-left: 0;
 	}
 
-}
+	.contact__link {
+		font-size: 3em;
+	}
+
+	.contact__link:hover {
+		font-size: 3em;
+	}
