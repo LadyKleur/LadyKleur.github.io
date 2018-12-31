@@ -123,8 +123,9 @@ body {
 }
 
 .gallery__item {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
+	width: 20em;
 }
 
 .full {
